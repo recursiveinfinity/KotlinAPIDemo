@@ -1,0 +1,21 @@
+
+MVP - Model, View, Presenter
+Model - Handles and stores Data
+Presenter - Acts as a bridge between view and model, handles ALL logic
+View - Responsible for UI - dumb view/passive view - Only shows data that is given
+to it and forwards input events
+
+Start with a contract - SOLID principles - Prefer abstractions over
+ concrete implementations because they are more modular - easy to replace or upgrade
+
+ Write contracts for View and Presenter
+ View contracts - will have methods to deal with showing data, error and other UI events
+ Presenter contract - will have methods that implements that functionality for the view
+ to work - requesting data, processing input
+
+ Implementations:
+ View - Just deal with UI actions - NO Logic processing
+ Presenter - It will check for input validity, error handling, data retrieval, input event
+ handling. It should hand data to the view in a format it can be readily shown
+
+
